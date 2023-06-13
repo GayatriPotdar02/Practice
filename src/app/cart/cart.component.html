@@ -1,0 +1,82 @@
+<!-- <p>cart works!</p>
+<img src="{{movetoCart.img}}">
+<h2>{{movetoCart.price}}</h2>
+<h2>{{movetoCart.name}}</h2> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <div class="first">
+
+        <div class="heading">
+            <a><button (click)="home()" class="homebtn">Home</button></a>
+            <h2> Cart</h2>
+        </div>
+
+        <hr>
+            
+    </div>
+
+    <section class="cardbox" style="background-color:'' #eee;">
+        <div class="container py-3">
+          <div class="row mt-5">
+            <div class="row">
+    
+              <div  class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                <div style="margin-left: 40px;" class="card">
+                  <div class="d-flex justify-content-between p-3">
+                    <p class="lead mb-0">Today's Combo Offer</p>
+                    <div class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                      style="width: 35px; height: 35px;">
+                      <p class="text-white mb-0 small">x4</p>
+                    </div>
+                  </div>
+                  <img style="    height: 300px;
+                width: auto;
+                object-fit: contain;" src="{{movetoCart.img}}" class="card-img-top" alt="" />
+                  <div style="padding: 20px;" class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <p class="small"><a href="#!" class="text-muted">Mens wear</a></p>
+                      <p class="small text-danger"><s>{{movetoCart.price}}</s></p>
+                    </div>
+    
+                    <div class="d-flex justify-content-between mb-3">
+                      <h5 class="mb-0">Pants</h5>
+                      <h5 class="text-dark mb-0">{{movetoCart.price}}</h5>
+                    </div>
+    
+                    <div class="d-flex justify-content-between mb-2">
+                      <p class="text-muted mb-0">Available: <span class="fw-bold">X,L,M,S</span></p>
+                      <div class="ms-auto text-warning">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+    
+    
+                       
+                          
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+    
+        </div>
+      </section>
+      </body>
